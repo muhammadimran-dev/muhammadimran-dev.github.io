@@ -2,9 +2,9 @@ $(function () {
             var mediumPromise = new Promise(function (resolve) {
             var $content = $('#jsonContent');
             var data = {
-                rss: 'https://medium.com/feed/@muhammad.imran114'
+                rss: 'https://theimrankhalid.medium.com/'
             };
-            $.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40muhammad.imran114', data, function (response) {
+            $.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40theimrankhalid', data, function (response) {
                 if (response.status == 'ok') {
                     $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
                     var output = '';
@@ -29,7 +29,7 @@ $(function () {
                         output += `<p class="card-text">${trimmedString}...</p>`;
                         output += `<a href="${item.link}" class="btn btn-outline-success">Read More</a>`;
                         output += '</div></div>';
-                        return k < 2;
+                        return k < 3;
                     });
                     resolve($content.html(output));
                 }
