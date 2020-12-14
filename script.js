@@ -29,7 +29,7 @@ $(function () {
                         output += `<p class="card-text">${trimmedString}...</p>`;
                         output += `<a href="${item.link}" class="btn btn-outline-success">Read More</a>`;
                         output += '</div></div>';
-                        return k < 10;
+                        return k < 2;
                     });
                     resolve($content.html(output));
                 }
