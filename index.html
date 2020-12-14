@@ -766,9 +766,9 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
             var mediumPromise = new Promise(function (resolve) {
             var $content = $('#jsonContent');
             var data = {
-                rss: 'https://medium.com/feed/@mediumstaff'
+                rss: 'https://medium.com/feed/@muhammad.imran114'
             };
-            $.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40mediumstaff', data, function (response) {
+            $.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40muhammad.imran114', data, function (response) {
                 if (response.status == 'ok') {
                     $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
                     var output = '';
