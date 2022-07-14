@@ -2,9 +2,9 @@ $(function () {
             var mediumPromise = new Promise(function (resolve) {
             var $content = $('#jsonContent');
             var data = {
-                rss: 'https://theimrankhalid.medium.com/'
+                rss: 'https://muhammadimran-dev.medium.com/'
             };
-            $.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40theimrankhalid', data, function (response) {
+            $.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40muhammadimran-dev', data, function (response) {
                 if (response.status == 'ok') {
                     $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
                     var output = '';
